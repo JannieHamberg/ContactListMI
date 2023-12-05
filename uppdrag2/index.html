@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktlista</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mq-main.css">
+
+      <!-- CDN links for FontAwesome Icons -->
+      <script src="https://kit.fontawesome.com/0f6419d5d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <main id="main-section">
+
+     <section id="h1-section">
+        <h1 class="main-h1">Välkommen till din&nbsp<span class="auto-type"></span></h1>
+        <h1 class="main-h1-sm">Välkommen till <br> din&nbsp<span class="auto-type-sm"></span></h1>
+     </section>
+
+     <section id="inner-section">
+
+        <section id="main-btn-section">
+        <a class = "a" href="contacts.html"> 
+            <button class="main-btn"> Kontaktlista</button>
+        </a>
+    </section>
+        <section id="butterfly-section">
+            <!-- Butterfly edited -->
+            <!-- this script is provided by https://www.javascriptfreecode.com coded by: Kerixa Inc. -->
+                <div class="canvas">
+                    <div class="butterfly">
+                    <div class="butterfly-wing-1"></div>
+                    <div class="butterfly-body"></div>
+                    <div class="butterfly-wing-2"></div>
+                    </div>
+                    </div> 
+            <!-- End of butterfly -->
+                </section>
+
+<!-- Bouncing text copied and edited from w3schools -->
+        <section class="bouncing-txt">
+            <p class="bouncing-p">
+                <i class="fa-solid fa-arrow-turn-up fa-flip-horizontal" style="color: #fcfcfc;"></i>
+                Klicka på knappen</p>
+            <div class="shadow"></div>
+            <div class="shadow-two"></div>
+        </section>
+    </section>     
+    </main>
+    <script src="main.js"></script>
+    <!-- CDN for typed JS h1 -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        let typed = new Typed(".auto-type", {
+    strings: ["kontaktlista!"],
+    typeSpeed: 180,
+    loop: false
+})
+
+let typed2 = new Typed(".auto-type-sm", {
+    strings: ["kontaktlista!"],
+    typeSpeed: 180,
+    loop: false
+})
+    </script>
+</body>
+</html>

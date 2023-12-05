@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktlista</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="mq-contacts.css">
+    
+</head>
+<body>
+    <main id="main-section">
+        
+        <section id="inner-section">
+        <section id="back-btn-section">
+            <a class="back-btn-link" href="index.html"><button id="back-btn">Tillbaka</button>
+            </a>
+        </section>
+            <section id="h1-section">
+           <h1 class="main-h1">Här kan du&nbsp<span class="auto-type"></span> och visa kontakter!</h1>
+        </section>
+        <section id="create-section">
+            <section id="create-p-section">
+                <p id="create-name-p">Namn:</p>
+                <p id="create-nmbr-p">Telefonnummer:</p>
+        </section>
+        <section id="create-input-section">
+            <input type="text" id="create-name">
+            <input type="number" pattern="[0-9]*" id="create-nmbr">
+        </section>
+
+        <div class="error-msg"></div>
+
+            <section id="create-btn-section">
+            <button id="create-btn">Skapa</button>
+            <button id="delete-btn">Radera lista</button>
+        </section>
+
+        </section>
+        
+        <section id="show-list-section">
+          
+         <h2 id="h2-list">Kontaktlista</h2>
+         
+         <section id="list-func-section">
+         <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for names..">
+         <button id="sort-btn" onclick="sortList()">Sortera</button>
+        </section>
+
+         <div class="contact-list-section">
+
+        <ul class="contact-list">
+        </ul>
+
+        <div class="error-msg2"></div>
+    </div>
+        
+    </section>
+
+        </section>
+        
+    </main>
+
+    <script src="contact.js"></script>
+      <!-- CDN for typed JS h1 -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+      <script>
+          let typed = new Typed(".auto-type", {
+      strings: ["skapa", "radera"],
+      typeSpeed: 150,
+      backSpeed: 130,
+      loop: true
+  })
+      </script>
+</body>
+</html>

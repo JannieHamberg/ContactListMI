@@ -1,0 +1,186 @@
+/* Media Query main page */
+
+/* Small desktop */
+
+@media only screen and (max-width: 1120px) and (min-width: 961px) {
+    
+    .main-h1 {
+        margin-top: 8%;
+        font-size:40px ;
+    }
+
+    #butterfly-section {
+        width: 40%; 
+    }
+
+    .bouncing-txt {
+        margin: 4% 2% 2% 10%;
+    }
+}
+
+/* Ipad Portrait */
+@media only screen and (max-width: 960px) and (min-width: 769px) { 
+
+    body,
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .canvas {
+        width: 100%;
+       
+        }
+
+
+    #main-section {
+        width: 100vw;
+        margin-top: 0%;
+    }
+    
+    .main-h1 {
+        display: none;
+    }
+
+    .main-h1-sm {
+        display: block;
+        margin-top: 8%;
+        font-size:39px ;
+    }
+
+    #inner-section {
+        margin-top: 12%;
+    }
+
+    .main-btn {
+        width: 140px;
+        height: 50px;
+        font-size: 17px;
+        padding: 20px;
+    }
+
+    #butterfly-section {
+        width: 35%; 
+    }
+
+    .bouncing-txt {
+        margin: 4% 2% 2% 14%;
+    }
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) and (min-width: 490px) {
+
+    body,
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+   
+
+    .canvas {
+        width: 100%;
+       
+        }
+
+    #main-section {
+        width: 100vw;
+        margin-top: 0%;
+    }
+
+    #h1-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .main-h1 {
+        display: none;
+    }
+
+    .main-h1-sm {
+        display: block;
+        margin-top: 8%;
+        font-size:30px ;
+    }
+
+    
+
+    #inner-section {
+        margin-top: 12%;
+    }
+
+    .main-btn {
+        width: 140px;
+        height: 50px;
+        font-size: 17px;
+        padding: 20px;
+    }
+
+    #butterfly-section {
+        width: 100%; 
+    }
+
+    .bouncing-txt {
+        margin-left: 38%;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width: 489.9px) {
+    
+    body,
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+   
+    .canvas {
+        width: 100%;
+       
+        }
+
+    #main-section {
+        width: 100vw;
+        margin-top: 0%;
+    }
+
+    #h1-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-h1 {
+        display: none;
+    }
+
+    .main-h1-sm {
+        display: block;
+        margin-top: 17%;
+        font-size:30px ;
+    }
+
+    #inner-section {
+        margin-top: 32%;
+    }
+
+    .main-btn {
+        width: 140px;
+        height: 50px;
+        font-size: 17px;
+        padding: 20px;
+    }
+
+    #butterfly-section {
+        width: 100%; 
+    }
+
+    :root {
+        --random-x: 260px;
+        --random-y: -130px;
+        }
+
+    .bouncing-txt {
+        margin-left: 38%;
+    }
+}
